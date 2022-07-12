@@ -6,7 +6,15 @@
 
 require('./bootstrap');
 
+import VueRouter from 'vue-router';
+
+import router from './router';
+import  App from './components/App';
+
+
+
 window.Vue = require('vue').default;
+
 
 /**
  * The following block of code may be used to automatically register your
@@ -20,6 +28,12 @@ window.Vue = require('vue').default;
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('editor', require('./components/Editor.vue').default);
+Vue.component('pages', require('./components/Pages.vue').default);
+Vue.component('products', require('./components/Products.vue').default);
+Vue.component('user', require('./components/User.vue').default);
+
+Vue.use(VueRouter);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -29,4 +43,6 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
+    render : h=> h(App),
+    router
 });
