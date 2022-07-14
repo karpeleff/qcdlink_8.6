@@ -5290,14 +5290,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "App"
 });
@@ -28613,32 +28605,6 @@ var render = function () {
               "flex justify-between items-center border-b py-4 md:py-8 mb-8 md:mb-12 xl:mb-16",
           },
           [
-            _c(
-              "a",
-              {
-                staticClass:
-                  "inline-flex items-center text-black-800 text-2xl md:text-3xl font-bold gap-2.5",
-                attrs: { href: "/", "aria-label": "logo" },
-              },
-              [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "w-6 h-auto text-indigo-500",
-                    attrs: {
-                      width: "95",
-                      height: "94",
-                      viewBox: "0 0 95 94",
-                      fill: "currentColor",
-                      xmlns: "http://www.w3.org/2000/svg",
-                    },
-                  },
-                  [_c("path", { attrs: { d: "M96 0V47L48 94H0V47L48 0H96Z" } })]
-                ),
-                _vm._v("\n\n               QCD-LINK.RU\n            "),
-              ]
-            ),
-            _vm._v(" "),
             _c("nav", { staticClass: "hidden lg:flex gap-12" }, [
               _c(
                 "a",
